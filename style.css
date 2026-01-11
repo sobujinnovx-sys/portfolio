@@ -88,8 +88,9 @@ p {
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .logo {
@@ -98,6 +99,14 @@ p {
     color: white;
     text-decoration: none;
     font-family: 'Fira Code', monospace;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
 }
 
 .nav-menu {
@@ -273,6 +282,27 @@ p {
     font-size: 0.9rem;
     color: #e2e8f0;
     line-height: 1.5;
+}
+
+.profile-picture {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(37, 99, 235, 0.3);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* About Section */
@@ -572,6 +602,23 @@ p {
     font-size: 0.9rem;
 }
 
+.project-tag-link {
+    background-color: #f1f5f9;
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.project-tag-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
 /* Projects Section */
 .projects {
     background-color: #f1f5f9;
@@ -789,6 +836,24 @@ p {
 .achievement-content p {
     color: var(--gray-color);
     font-size: 0.95rem;
+}
+
+.cert-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: var(--transition);
+    background-color: rgba(37, 99, 235, 0.1);
+}
+
+.cert-link:hover {
+    background-color: rgba(37, 99, 235, 0.2);
+    color: var(--primary-dark);
 }
 
 /* Footer */
